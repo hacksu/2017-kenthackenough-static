@@ -19,27 +19,70 @@ body {
 }
 
 .logo {
-    width: 50%;
-    top: 0;
-    left: 0;
+    width: 100%;
+    text-align: center;
 }
 
 .welcome {
-    width: 50%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-right: 25px;
-
-    text-align: right;
-    font-size: 2.75em;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: rgba(238, 238, 238, 1);
+    text-shadow: -3px 3px 0px rgba(39, 33, 60, 1);
+    font-size: 1.5em;
 }
 
 .links {
     width: 100%;
-    margin-top: 175px;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 1.25em;
+    margin-top: 3rem;
+}
+
+#sitting {
+    position: fixed;
+    bottom: 0;
+    width: 300px;
+    height: 165px;
+
+    z-index: -9999;
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        width: 50%;
+        top: 0;
+        left: 0;
+
+        text-align: left;
+    }
+
+    .welcome {
+        width: 50%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 25px;
+        text-shadow: -4px 4px 0px rgba(39, 33, 60, 1);
+        text-align: right;
+        font-size: 2.75em;
+    }
+
+    .links {
+        width: 100%;
+        margin-top: 10rem;
+        text-align: center;
+        font-size: 2.5em;
+    }  
+
+    #sitting {
+        position: fixed;
+        bottom: 0;
+        width: 400px;
+        height: 240px;
+    
+        z-index: -9999;
+    }
 }
 
 .button {
