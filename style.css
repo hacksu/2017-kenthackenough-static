@@ -39,13 +39,21 @@ body {
     margin-top: 3rem;
 }
 
-#sitting {
-    position: fixed;
-    bottom: 0;
-    width: 300px;
-    height: 165px;
+.links-two {
+    width: 100%;
+    text-align: center;
+    font-size: 1.25em;
+    margin-top: 4rem;
+}
 
-    z-index: -9999;
+#sitting {
+    display:none;
+}
+
+#KHE {
+    height: 180px;
+    width: 360px;
+    text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -72,14 +80,26 @@ body {
         width: 100%;
         margin-top: 10rem;
         text-align: center;
-        font-size: 2.5em;
+        font-size: 2.25em;
     }  
 
+    .links-two {
+        width: 100%;
+        margin-top: 5rem;
+        text-align: center;
+        font-size: 2.25em;
+    }
+
+    #KHE {
+        height: 220px;
+        width: 400px;
+    }
+
     #sitting {
+        display: inline;
+
         position: fixed;
         bottom: 0;
-        width: 400px;
-        height: 240px;
     
         z-index: -9999;
     }
@@ -92,9 +112,4 @@ body {
     border: 2px solid black;
     color: rgba(238, 238, 238, 1);
     background-color: rgba(87, 70, 123, 1);
-}
-
-#KHE {
-    height: 220px;
-    width: 400px;
 }
